@@ -1,0 +1,330 @@
+/**
+  * Colors
+*/
+
+:root {
+	/* --main-link-color: #4188f2; */
+	--main-link-color: #4250C9;
+	--primary-color: #29317d;
+	--accent-color: #a42a2a;
+	--action-stations-color: #ec1f27;
+	--mobile-partitions-color: #A28E2F;
+	--nesting-tables-color: #f68e2e;
+}
+
+.primary-color {
+	color: var(--primary-color);
+	color: #29317D;
+}
+
+.bg-gray-1 {
+	background-color: #F7FAFE;
+}
+
+/**
+  * Default Styles and Resets
+*/
+
+body {
+	font-size: 16px;
+	font-family: 'proxima-nova', 'Proxima Nova';
+	color: #333;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+p {
+	color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'proxima-nova', 'Proxima Nova';
+	font-weight: inherit;
+	text-transform: none;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h2.card-title {
+	text-transform: none;
+	font-size: 22px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+hr,
+.hr.divider {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.empty-category-block h2::before {
+	width: 72px;
+}
+
+button {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+	* Utility Styles 
+*/
+
+/* Flex containers and items */
+.container-flex,
+.flex-container {
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+}
+
+.flex {
+	display: flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+}
+}
+
+.flex-gap {
+	column-gap: .5rem;
+	row-gap: .5rem;
+}
+
+.flex-gap>* {
+	flex: 1 1 49%;
+}
+
+.flex-y-center {
+	align-items: center;
+}
+
+.flex-x-center {
+	justify-content: center;
+}
+
+.flex-flow-rw {
+	flex-flow: row wrap;
+}
+
+.two-col {
+	flex: 50%;
+}
+
+.one-third {
+	flex: 33%;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* Grid containers */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 2rem;
+}
+
+.grid+.grid {
+	margin-top: 2rem;
+}
+
+.grid-xy-center {
+	justify-items: center;
+	align-items: center;
+}
+
+.grid-x-center {
+	justify-items: center;
+}
+
+.container-grid {
+	display: -ms-grid;
+	display: -moz-grid;
+	display: -webkit-grid;
+	display: grid;
+}
+
+.z-index-1 {
+	z-index: 1;
+}
+
+/**
+	* Header
+*/
+
+/* Navigation Menu */
+
+#fi-menu-icon {
+  width: 20px;
+}
+
+#mobile-menu-btn {
+	display: none;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+nav ul li {
+	padding-left: none;
+}
+
+
+/**
+	* Health and Safety Page
+*/
+
+.page-title-section {
+	text-align: center;
+	padding: 2.6rem 0;
+}
+
+.page-title--category-name {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: light;
+}
+
+.page-title--why__big {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.page-title--why {
+	font-size: 18px;
+}
+
+.boxed-content {
+	display: inline-block;
+}
+
+.circle img {
+	margin-bottom: 16px;
+}
+
+.grid-carousel .box {
+	padding: 0 .8rem;
+	text-align: center;
+}
+
+.page-template-full-width-slick .section {
+	padding: 40px 0;
+}
+
+.page-template-full-width-slick .section h2 {
+	padding-bottom: 24px;
+}
+
+.page-template-full-width-slick .slick-next {
+	right: 0 !important;
+}
+
+.page-template-full-width-slick .slick-prev {
+	left: 0 !important;
+}
+
+.box img {
+	margin-bottom: 16px;
+}
+
+.box .box-title {
+	text-transform: none !important;
+}
+
+/* Al Fresco */
+.fancy-tagline {
+	font-family: 'skolar latin';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 2rem;
+	color: #29317d;
+	padding-bottom: 2rem;
+	position: relative;
+}
+
+.fancy-tagline::after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	display: inline-block;
+	height: 8px;
+	width: 100px;
+	bottom: 40px;
+	background-color: #8FDEFC;
+	z-index: -1;
+}
+
+.health-n-safety .invis-card {
+	text-align: left;
+	border: 0px;
+	padding: 4px 16px;
+	transition: none;
+}
+
+.health-n-safety h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 8px 0;
+}
+
+.health-n-safety p {
+	line-height: normal;
+}
+
+.health-n-safety .invis-card:hover {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .0);
+}
+
+.health-n-safety .invis-card a h3:hover {
+	text-decoration: underline;
+}
+
+/* Shop page mods */
+.filter-wrap {
+	display: none;
+}
+
+.shop-filters-area {
+	display: none;
+}
+
+/* Local Fixes */
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black !important;
+}
+
+.section {
+	position: relative;
+	padding: 40px 0;
+}
