@@ -103,7 +103,6 @@ button {
 	display: -webkit-box;
 	display: flex;
 }
-}
 
 .flex-gap {
 	column-gap: .5rem;
@@ -124,6 +123,10 @@ button {
 
 .flex-flow-rw {
 	flex-flow: row wrap;
+}
+
+.sp-between {
+	justify-content: space-between;
 }
 
 .two-col {
@@ -184,14 +187,12 @@ button {
 	display: none;
 }
 
-nav ul {
-	display: flex;
+.main-nav {
 	list-style: none;
-	justify-content: space-between;
+	padding-left: 0;
 }
 
-nav ul li {
-	padding-left: none;
+.main-nav li {
 }
 
 
