@@ -109,7 +109,7 @@ button {
 	row-gap: .5rem;
 }
 
-.flex-gap>* {
+.flex-gap > * {
 	flex: 1 1 49%;
 }
 
@@ -129,11 +129,11 @@ button {
 	justify-content: space-between;
 }
 
-.two-col {
+.flex-half {
 	flex: 50%;
 }
 
-.one-third {
+.flex-third {
 	flex: 33%;
 }
 
@@ -171,6 +171,34 @@ button {
 
 .z-index-1 {
 	z-index: 1;
+}
+
+/* Positioning */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+/* Image */
+.img-cap-center {
+  top: 16%;
+  left: 30%;
+}
+
+/* Spacers */
+.spacer-sm {
+  padding: 12px 0;
+}
+
+.spacer-md {
+  padding: 24px 0;
+}
+
+.spacer-lg {
+  padding: 40px 0;
 }
 
 /**
